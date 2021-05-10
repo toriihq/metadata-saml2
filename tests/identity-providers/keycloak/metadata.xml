@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor entityID="https://sso.acme.com/auth/realms/ACME-SSO"
+                   xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                   xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <IDPSSODescriptor WantAuthnRequestsSigned="true"
+      protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <SingleLogoutService
+         Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+         Location="https://sso.acme.com/auth/realms/ACME-SSO/protocol/saml" />
+   <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+   <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+   <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+   <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+
+      <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+         Location="https://sso.acme.com/auth/realms/ACME-SSO/protocol/saml" />
+      <KeyDescriptor use="signing">
+        <dsig:KeyInfo>
+          <dsig:KeyName>XX-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXX</dsig:KeyName>
+          <dsig:X509Data>
+            <dsig:X509Certificate>example-cert</dsig:X509Certificate>
+          </dsig:X509Data>
+        </dsig:KeyInfo>
+      </KeyDescriptor>
+   </IDPSSODescriptor>
+</EntityDescriptor>
