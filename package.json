@@ -7,8 +7,11 @@
   "scripts": {
     "test": "jest test --watch",
     "test-ci": "jest test --coverage",
-    "standard": "yarn standard"
+    "standard": "standard"
   },
+  "files": [
+    "lib"
+  ],
   "standard": {
     "env": [ "jest" ]
   },
