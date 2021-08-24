@@ -10,7 +10,7 @@ describe('Keycloak', () => {
       entityId: 'https://sso.acme.com/auth/realms/ACME-SSO',
       HTTPPost: 'https://sso.acme.com/auth/realms/ACME-SSO/protocol/saml',
       HTTPRedirect: undefined,
-      X509Certificate: 'example-cert'
+      X509Certificates: ['example-cert']
     })
   })
 })

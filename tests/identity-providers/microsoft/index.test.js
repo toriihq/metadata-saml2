@@ -10,7 +10,7 @@ describe('Microsoft', () => {
       entityId: 'https://sts.windows.net/12345678-1234-1234-1234-123456789012/',
       HTTPPost: 'https://login.microsoftonline.com/12345678-1234-1234-1234-123456789012/saml2',
       HTTPRedirect: 'https://login.microsoftonline.com/12345678-1234-1234-1234-123456789012/saml2',
-      X509Certificate: 'example-cert'
+      X509Certificates: ['example-cert']
     })
   })
 })
