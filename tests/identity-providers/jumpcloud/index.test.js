@@ -10,7 +10,7 @@ describe('JumpCloud', () => {
       entityId: 'https://api.acme.com/saml',
       HTTPPost: 'https://sso.jumpcloud.com/saml2/acme',
       HTTPRedirect: undefined,
-      X509Certificate: 'example-cert'
+      X509Certificates: ['example-cert']
     })
   })
 })

@@ -9,7 +9,7 @@ describe('Okta', () => {
       entityId: 'http://www.okta.com/exkgtqmzpeABC1234567',
       HTTPPost: 'https://acme.okta.com/app/example_saml/exkgtqmzpeABC1234567/sso/saml',
       HTTPRedirect: 'https://acme.okta.com/app/example_saml/exkgtqmzpeABC1234567/sso/saml',
-      X509Certificate: 'example-cert'
+      X509Certificates: ['example-cert']
     })
   })
 
@@ -20,7 +20,7 @@ describe('Okta', () => {
       entityId: 'http://www.okta.com/10203040501020304050',
       HTTPPost: 'https://acme.okta.com/app/example_saml/10203040501020304050/sso/saml',
       HTTPRedirect: 'https://acme.okta.com/app/example_saml/10203040501020304050/sso/saml',
-      X509Certificate: 'example-cert'
+      X509Certificates: ['example-cert']
     })
   })
 })
