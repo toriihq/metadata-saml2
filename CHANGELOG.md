@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.1.1
+
+- Remove jest and standard from devDependencies, use npx instead
+
+---
+
 ## v2.1.0
 
 - Fix: Strip whitespace from X509Certificate values parsed from XML metadata. Certificates in indented XML (e.g. PingOne/PingFederate) included newlines and spaces that corrupted downstream PEM encoding and caused SAML signature validation failures.

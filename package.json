@@ -1,13 +1,13 @@
 {
   "name": "metadata-saml2",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Parse SAML metadata.xml files",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest test --watch",
-    "test-ci": "jest test --coverage",
-    "standard": "standard"
+    "test": "npx jest@30 test --watch",
+    "test-ci": "npx jest@30 test --coverage",
+    "standard": "npx standard@17"
   },
   "files": [
     "lib"
@@ -19,9 +19,5 @@
   },
   "dependencies": {
     "xml2js": "^0.6.2"
-  },
-  "devDependencies": {
-    "jest": "^30.3.0",
-    "standard": "^17.1.2"
   }
 }
