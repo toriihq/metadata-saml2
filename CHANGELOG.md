@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.1.2
+
+- Clean up yarn.lock after devDependencies removal
+
+---
+
 ## v2.1.1
 
 - Remove jest and standard from devDependencies, use npx instead
